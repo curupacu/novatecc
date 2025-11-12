@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>NOVATEC — Início</title>
+  <meta name="description" content="NOVATEC — Soluções de software com propósito. Valores, ODS e equipe.">
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icons/icon-64.png" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-180.png" />
+  <meta property="og:title" content="NOVATEC — Início" />
+  <meta property="og:description" content="Desenvolvimento de software com ética, colaboração e inovação." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/icons/icon-512.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Botão SEM display:none (sempre visível) */
+    #installBtn {
+      background: linear-gradient(90deg, #6d28d9, #9333ea);
+      color: #fff;
+      font-weight: 600;
+      border: 0;
+      border-radius: 8px;
+      padding: 8px 14px;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    #installBtn[disabled] {
+      opacity: .6;
+      cursor: not-allowed
+    }
+
+    #installBtn:hover:not([disabled]) {
+      transform: translateY(-1px)
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-blur shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo NOVATEC" width="42" height="42" class="rounded">
+        <strong>NOVATEC</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navMain" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <button id="installApp" class="btn btn-primary ms-lg-3 install-btn">
+              Instalar App
+            </button>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#quem-somos">Nossos Valores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ods">ODS</a></li>
+          <li class="nav-item"><a class="nav-link" href="empresa.html">Empresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="reclamacoes.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-6">
+          <h1 class="fw-bold display-5 mb-3">Transformamos ideias em <span class="text-gradient">software útil</span>.
+          </h1>
+          <p class="lead text-secondary mb-4">Soluções reais com foco em pessoas, qualidade e propósito — direto do
+            nosso laboratório de aprendizado prático.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#quem-somos" class="btn btn-primary">Conheça nossos valores</a>
+            <a href="#ods" class="btn btn-outline-light">Nossas ODS</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="hero-card p-4">
+            <img src="assets/img/equipe.webp" alt="Equipe NOVATEC" class="img-fluid rounded">
+            <div class="text-center mt-2"><small class="text-secondary">Equipe NOVATEC — Desenvolvendo o futuro</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="quem-somos" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Nossos Valores</h2>
+      <p class="text-secondary mb-5">Valores e princípios que guiam nosso trabalho.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-soft h-100 p-4">
+            <h3 class="h5 mb-2">Ética & Responsabilidade</h3>
+            <p>Transparência, respeito e compromisso com a comunidade escolar.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-soft h-100 p-4">
+            <h3 class="h5 mb-2">Colaboração</h3>
+            <p>Trabalho em equipe, comunicação clara e melhoria contínua.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-soft h-100 p-4">
+            <h3 class="h5 mb-2">Inovação com Propósito</h3>
+            <p>Aprender, experimentar e criar soluções simples para problemas reais.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-soft h-100 p-4">
+            <h3 class="h5 mb-2">Foco no Usuário</h3>
+            <p>Decisões guiadas por pesquisa, acessibilidade e experiência.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-soft mt-5 p-5">
+        <h3 class="h4 mb-3">Nossa Visão</h3>
+        <p class="lead mb-0">Ser referência em aprendizagem prática de tecnologia, entregando software que melhora a
+          vida na escola.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ods" class="py-5 ods-section">
+    <div class="container">
+      <h2 class="section-title">ODS Prioritárias</h2>
+      <p class="text-secondary mb-5">Alinhadas ao documento da Fábrica e à missão da ETEC Heliópolis.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-soft h-100 position-relative"><span class="ods-badge">ODS 8</span><img
+              src="assets/img/ods8.png" class="card-img-top p-4 pb-0" alt="ODS 8">
+            <div class="card-body">
+              <h3 class="h5">Trabalho Decente & Crescimento</h3>
+              <p>Projetos que desenvolvem competências e responsabilidade social.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-soft h-100 position-relative"><span class="ods-badge">Meta 8.2</span><img
+              src="assets/img/ods8.png" class="card-img-top p-4 pb-0" alt="ODS 8">
+            <div class="card-body">
+              <h3 class="h5">Inovação e Produtividade</h3>
+              <p>Alcançar níveis mais elevados de produtividade econômica por meio da diversificação e inovação
+                tecnológica.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-soft h-100 position-relative"><span class="ods-badge">Meta 8.3</span><img
+              src="assets/img/ods8.png" class="card-img-top p-4 pb-0" alt="ODS 8">
+            <div class="card-body">
+              <h3 class="h5">Fomento ao Empreendedorismo</h3>
+              <p>Incentivar a criação de postos de trabalho, empreendedorismo e o crescimento de micro, pequenas e
+                médias empresas.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-5">
+    <div class="container text-center">
+      <img src="assets/img/logo.png" width="50" alt="Logo NOVATEC" class="mb-3">
+      <p class="text-secondary mb-2">© 2025 NOVATEC — ETEC Heliópolis. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const installBtn = document.getElementById('installApp');
+    let deferredPrompt = null;
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('✅ SW ativo'))
+        .catch(console.error);
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      installBtn.disabled = false;
+    });
+
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) {
+        alert("Para instalar: use 'Adicionar à tela inicial' no navegador.");
+        return;
+      }
+      deferredPrompt.prompt();
+      const result = await deferredPrompt.userChoice;
+      if (result.outcome === 'accepted') {
+        alert('✅ Aplicativo instalado!');
+      } else {
+        alert('Instalação cancelada.');
+      }
+      deferredPrompt = null;
+    });
+  </script>
+
+
+</body>
+
+</html>
